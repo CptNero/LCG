@@ -15,7 +15,7 @@ namespace LCG {
       }
 
       uint64_t d =
-              std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::high_resolution_clock::now()
+              std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::high_resolution_clock::now()
               .time_since_epoch())
               .count();
       const uint64_t m = std::pow(2, 32);
